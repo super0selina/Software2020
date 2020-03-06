@@ -1,6 +1,6 @@
 ---
 title: "HW2"
-author: "Your Name (ID)"
+author: "H44074039"
 output: html_document
 ---
 
@@ -13,17 +13,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 str(iris)
-#summary()
+summary(iris)
 ```
 
 # Problem 2:
 
-The sample median of the variable Petail.With is  
+The sample median of the variable Petail.With is 1.300
 
 # Problem 3: Draw a histograms of the Sepal.Length variable
 
 ```{r}
-hist()
+hist(iris$Sepal.Length)
 ```
 
 # Problem 4: Draw a scatter plot 
+```{r}
+plot(x=iris$Sepal.Length,y=iris$Petal.Length,xlab="Sepal.Length",ylab="Petal.Length")
+```
